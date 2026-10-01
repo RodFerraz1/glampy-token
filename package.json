@@ -1,0 +1,42 @@
+{
+  "name": "landing-page-comercial",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:operacoes": "node scripts/testar-operacoes.mjs",
+    "typecheck": "tsc --noEmit",
+    "db:tipos": "supabase gen types typescript --local > src/servidor/adaptadores/tipos-do-banco.ts && npx --yes oxfmt src/servidor/adaptadores/tipos-do-banco.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "jsqr": "^1.4.0",
+    "lucide-react": "^1.48.0",
+    "next": "16.3.7",
+    "ox": "^0.11.3",
+    "pdf-lib": "^1.17.1",
+    "permissionless": "^0.4.1",
+    "qrcode": "^1.5.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "viem": "^2.57.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.7",
+    "supabase": "^2.118.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
